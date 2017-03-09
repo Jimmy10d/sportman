@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "cloudantNoSQLDB",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -39,6 +40,12 @@
     "$resolved": true
   },
   "team": {
+    "dataSource": "cloudantNoSQLDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "user": {
     "dataSource": "cloudantNoSQLDB",
     "public": true,
     "$promise": {},
