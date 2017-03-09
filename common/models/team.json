@@ -7,8 +7,18 @@
     "validateUpsert": true
   },
   "properties": {
-    "teamName": {
+    "team_name": {
       "type": "string",
+      "required": true
+    },
+    "team_abrName": {
+      "type": "string",
+      "required": true
+    },
+    "team_members": {
+      "type": [
+        "string"
+      ],
       "required": true
     }
   },

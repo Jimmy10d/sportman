@@ -7,13 +7,32 @@
     "validateUpsert": true
   },
   "properties": {
-    "compName": {
+    "comp_name": {
       "type": "string",
+      "required": true
+    },
+    "comp_fee": {
+      "type": "number",
+      "required": true
+    },
+    "comp_regulation": {
+      "type": "string",
+      "required": true
+    },
+    "comp_type": {
+      "type": "string",
+      "id": false,
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "teams": {
+      "type": "hasMany",
+      "model": "team",
+      "foreignKey": "competition"
+    }
+  },
   "acls": [],
   "methods": {}
 }
