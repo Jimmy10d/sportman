@@ -1,0 +1,21 @@
+{
+  "name": "fixture",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fixture_number": {
+      "type": "string"
+    },
+    "fixture_match": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

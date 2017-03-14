@@ -50,5 +50,23 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "schedule": {
+    "dataSource": "cloudantNoSQLDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "match": {
+    "dataSource": "cloudantNoSQLDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "fixture": {
+    "dataSource": "cloudantNoSQLDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

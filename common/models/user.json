@@ -35,7 +35,8 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [ {
+  "acls": [
+    {
       "accessType": "EXECUTE",
       "principalType": "ROLE",
       "principalId": "$everyone",
@@ -143,4 +144,3 @@
   ],
   "methods": {}
 }
-

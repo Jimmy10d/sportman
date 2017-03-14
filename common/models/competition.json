@@ -23,6 +23,24 @@
       "type": "string",
       "id": false,
       "required": true
+    },
+    "comp_location": {
+      "type": "string"
+    },
+    "comp_award": {
+      "type": "string"
+    },
+    "comp_finish": {
+      "type": "string"
+    },
+    "comp_start": {
+      "type": "string"
+    },
+    "comp_notes": {
+      "type": "string"
+    },
+    "comp_teams": {
+      "type": "string"
     }
   },
   "validations": [],
