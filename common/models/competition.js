@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(Competition) {
 	Competition.addRegister = function(UserId, CompetitionId, cb){
 		Competition.findOne({where:{id: CompetitionId}},
@@ -57,7 +58,6 @@ module.exports = function(Competition) {
 			http: {path: '/addRegister', verb: 'put'}
 		}
 	);
-
 
 };
 
