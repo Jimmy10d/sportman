@@ -9,7 +9,6 @@
   "properties": {
     "team_abrName": {
       "type": "string",
-      "required": true
     },
     "team_name": {
       "type": "string",
@@ -48,8 +47,7 @@
     "team_squad": {
       "type": [
         "string"
-      ],
-      "required": true
+      ]
     }
   },
   "validations": [],
