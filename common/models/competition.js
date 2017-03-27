@@ -44,4 +44,21 @@ module.exports = function(Competition) {
 				}				
 			});
 	};
+
+
+	Post.remoteMethod(
+		'addRegister',
+		{
+			accepts: [
+					{arg: 'UserId', type: 'string'},
+					{arg: 'CompetitionId', type: 'string'}
+					],
+			returns: {arg: 'register', type: 'string', root: true},
+			http: {path: '/addRegister', verb: 'put'}
+		}
+	);
+
+
 };
+
+
