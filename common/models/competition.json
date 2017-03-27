@@ -36,6 +36,9 @@
     "comp_start": {
       "type": "string"
     },
+    "register": {
+      "type": "string"
+    },
     "comp_notes": {
       "type": "string"
     },

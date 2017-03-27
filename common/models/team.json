@@ -44,9 +44,6 @@
     "team_goalAgainst": {
       "type": "string"
     },
-    "register": {
-      "type": "string"
-    },
     "team_squad": {
       "type": [
         "string"
