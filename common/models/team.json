@@ -8,7 +8,7 @@
   },
   "properties": {
     "team_abrName": {
-      "type": "string",
+      "type": "string"
     },
     "team_name": {
       "type": "string",
