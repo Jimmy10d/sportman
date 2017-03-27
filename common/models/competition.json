@@ -48,7 +48,6 @@
     "teams": {
       "type": "hasMany",
       "model": "team",
-      "foreignKey": "competition"
     }
   },
   "acls": [],
