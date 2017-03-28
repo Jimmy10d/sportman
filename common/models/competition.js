@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function(Competition) {
 	Competition.addRegister = function(UserId, CompetitionId, cb){
 		Competition.findOne({where:{id: CompetitionId}},
