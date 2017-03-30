@@ -11,9 +11,7 @@
       "type": "string"
     },
     "fixture_matches": {
-      "type": [
-        "string"
-      ]
+      "type": "string"
     }
   },
   "validations": [],
