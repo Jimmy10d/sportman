@@ -15,7 +15,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "matches": {
+      "type": "hasMany",
+      "model": "match",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
