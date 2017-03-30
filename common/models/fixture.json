@@ -19,7 +19,7 @@
     "matches": {
       "type": "hasMany",
       "model": "match",
-      "foreignKey": ""
+      "foreignKey": "fixture_number"
     }
   },
   "acls": [],
