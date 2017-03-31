@@ -1,24 +1,28 @@
 'use strict';
 
 module.exports = function(Fixture) {
-	Fixture.getFixture = function(fixtureNumber, cb){
-		Fixture.findOne({fields: {id: false}, where:{fixture_number:fixtureNumber}},
-			function(err,instance){
-				if(instance===null){
+	Fixture.getMatches = function(fixtureNumber, cb){
+		var FixtureMatches = Fixture.app.models.Match;
+		var matchesResult = [];
+		FixtureMatches.find({where: {fixture_number: fixtureNumber}},
+			function (err,instance){
+				if (instance===null){
 					cb(null,null);
-				}else{
-					cb(null,instance);
+				}else {
+					matchesResult = instance;
+					cb(null,matchesResult);
 				}
 			});
+
 	};
 
 	Fixture.remoteMethod(
-		'getFixture',
+		'getMatches',
 		{
 			accepts: {arg: 'fixtureNumber', type: 'string'},
-			returns: {arg: 'id', type: 'string', root: true},
-			http: {path: '/getFixture', verb: 'get', source: 'query'},
-			description: "Get fixture instance by fixture number"
+			returns: {arg: 'matches', type: 'string', root: true},
+			http: {path: '/getMatches', verb: 'get', source: 'query'},
+			description: "Get matches instance by fixture number"
 		}
 	);
 };
