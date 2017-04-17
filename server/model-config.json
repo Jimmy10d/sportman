@@ -63,6 +63,12 @@
     "$promise": {},
     "$resolved": true
   },
+  "Message": {
+    "dataSource": "cloudantNoSQLDB",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
   "fixture": {
     "dataSource": "cloudantNoSQLDB",
     "public": true,
